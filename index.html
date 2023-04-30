@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세줄요약</title>
+  </head>
+  <style>
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      resize: vertical;
+    }
+  </style>
+  <body>
+    <h1>세줄요약</h1>
+    <form id="gptForm">
+      <label for="prompt">Prompt:</label>
+      <textarea id="prompt" name="prompt" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Result:</h2>
+    <pre id="result"></pre>
+
+    <script src="index.js"></script>
+  </body>
+</html>
